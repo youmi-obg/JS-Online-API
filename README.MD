@@ -42,7 +42,7 @@
 | ----      | ----                                  | ----                              |
 | code      | Integer                               | 错误码             |
 | msg       | String                               | 错误信息             |
-| ad_slots  | []<a href="#AdSlotRes">AdSlot</a>     | 广告信息  |
+| ad_slot   | []<a href="#AdSlotRes">AdSlot</a>     | 广告信息  |
 
 
 #### <a name="AdSlotRes">AdSlot</a>
