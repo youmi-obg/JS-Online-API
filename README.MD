@@ -5,7 +5,7 @@
 ## API Request
 
 ### API 请求说明
-    URL: https://online-api.nemoka.com/v1/ol/ads
+    URL: https://jt.nemoka.com/v1/ol/ads
     Method: POST
     Headers: 'content-type: application/json'
 
@@ -24,7 +24,7 @@
 | 参数    | 类型     | 必须 | 样例                                                 |描述               |
 |--------------|----------|-------|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | ip           | String   | Y     | 184.34.21.5                                             | 客户端IP                                                                                     |
-| ua           | String   | Y     | Mozilla/5.0 (Linux; Android 7.0.0;) AppleWebKit/527 (KHTML, like Gecko) Chrome/69.0.0.0 Mobile Safari/5  | 客户端user agent字符串                                                                                      |
+| ua           | String   | Y     | Mozilla/5.0 (Linux;) (KHTML) Chrome/69 Mobile Safari/5  | 客户端user agent字符串                                                                                      |
 | gaid         | String   | Y     |                                                         | Google Advertising ID                                                                                    |
 | idfa         | String   | Y     |                                                         | iOS IDFA                                                                                    |
 
@@ -78,24 +78,23 @@
 #### <a name="TrackingUrls">TrackingUrls</a>
 | 参数               | 类型         | 必须    | 样例                                     |描述               |
 |--------------     |----------    |--------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| impression_url    | String       | Y      | https://online-api.nemoka.com/v1/adj/log?f=ol&r=ChxDT       | 广告展示回调链接，在广告展示完后必须进行回调。 |
-| click_url         | String       | Y      | https://online-api.nemoka.com/v1/adj/log?f=ol&r=mc291cmNlPTk3MDMwMzA0MDAYgdgWIAM       | 广告跳转链接，在点击广告后必须进行跳转。  |
+| impression_url    | String       | Y      | https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT       | 广告展示回调链接，在广告展示完后必须进行回调。 |
+| click_url         | String       | Y      | https://jt.nemoka.com/v1/adj/log?f=ol&r=mc291cmNlPTk3MDMwMzA0MDAY       | 广告跳转链接，在点击广告后必须进行跳转。  |
 
 
 #### <a name="Creatives">Creatives</a>
 | 参数               | 类型         | 必须    | 样例                                     |描述               |
 |--------------     |----------    |--------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| img_url           | String       | Y      | https://online-api.nemoka.com/v1/adj/log?f=ol&r=ChxDT       | 图片链接 |
+| img_url           | String       | Y      | https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT       | 图片链接 |
 | dimensions        | String       | Y      | 728×90      | 图片尺寸信息  |
 
 
-http://report-api.nemoka.com/v1/report?token=we2917n2is61o92s72m0d71bd9am37xj9&start_dt=2018-10-17&end_dt=2018-10-18&dimension=Clicks&dimension=Revenue
 
 ### 样例:
 #### Request
 ```
 curl -X POST \
-  https://online-api.nemoka.com/v1/ol/ads \
+  https://jt.nemoka.com/v1/ol/ads \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -d '{
@@ -135,8 +134,8 @@ curl -X POST \
                         "app_icon":"http://google.cdn.com/1.png"
                     },
                     "tracking_urls": {
-                        "impression_url": "https://online-api.nemoka.com/v1/adj/log?f=ol&r=ChxDT2RMRUwtY094aUFfZUdTSkNDc0FpajZBV2dEGIHYFiAC",
-                        "click_url": "https://online-api.nemoka.com/v1/adj/log?f=ol&r=ChxDT2RMRUwtY094aUFfZUdTSkNDc0FpajZBV2dEEkVodHRwczovL3RyYWNrLm5lbW9rYS5jb20vYWZmX2M_cz1DTC1jT3hDQjJCWVlDaUR2Qncmc291cmNlPTk3MDMwMzA0MDAYgdgWIAM"
+                        "impression_url": "https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT2RMRUwtY094aUFfZUdTSkNDc0FpajZBV2dEGIHYFiAC",
+                        "click_url": "https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT2RMRUwt91cmNlPTk3MDMwMzA0MDAYgdgWIAM"
                     }
                 }
             ]
@@ -147,8 +146,8 @@ curl -X POST \
                 {
                     "oid": 200,
                     "tracking_urls": {
-                        "impression_url": "https://online-api.nemoka.com/v1/adj/log?f=ol&r=ChxDT2RMRUwtY094aU",
-                        "click_url": "https://online-api.nemoka.com/v1/adj/log?f=ol&r=ChxDT2_cz1DTC1jT3hDQjJCWVlDaUR2Qncmc291cmNlPTk3MDMwMzA0MDEYgdgWIAM"
+                        "impression_url": "https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT2tY094aU",
+                        "click_url": "https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT2_cz1DTC1jTgdgWIAM"
                     },
                     "creatives": {
                         "img_url": "http://x.cdn.net/public/ad/creative/298825232acf53dfb3666b8963f011860c4-.jpg",
