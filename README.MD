@@ -1,4 +1,4 @@
-# Js Online API
+# Online API
 
 *API只能通过HTTP访问，并以JSON格式返回数据。
 
