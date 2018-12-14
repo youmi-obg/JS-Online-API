@@ -66,12 +66,8 @@
 |--------------     |----------|-----------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | app_name          | String   | Y         |                 | APP名称                                                                                 |
 | app_category      | String   | Y         |                 | APP分类                                                                                |
-| app_developer     | String   | N         |                 | 开发者                                                                                 |
 | app_native_id     | String   | N         |                 | package/bundle ID                                                                                |
-| app_rating        | String   | N         |                 | 商店中的评分(1-5)                                                                                |
-| app_cta           | String   | N         |                 | 在原生广告单元中使用的宣传语                                                                                 |
 | app_description   | String   | N         |                 | APP的描述                                                                                 |
-| app_store_page    | String   | N         |                 | 在商店的APP页面                                                                                 |
 | app_icon          | String   | N         |                 | APP的icon链接                                                                                 |
 
 
