@@ -1,11 +1,12 @@
 # Online API Client 2 Server Version
+    *此版本用于客户端调用
     *此版本与Online API 的区别是，该版本通过客户端调用，且ip，ua，dimensions字段可为空,但必传（兼容S2S版本）
     *API只能通过HTTP访问，并以JSON格式返回数据。
 
 ## API Request
 
 ### API 请求说明
-    URL: https://jt.nemoka.com/v1/ol/ads
+    URL: https://jt.nemoka.com/v1/olc/ads
     Method: POST
     Headers: 'content-type: application/json'
 
