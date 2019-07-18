@@ -97,17 +97,17 @@ curl -X POST \
             "access_token":"{Your Access Token}",
             "app_id":10000,
             "client_info":{
-                    "ip":"192.168.1.3",
-                    "ua":"Mozilla/5.0 (Linux; Android 7.0.0;) AppleWebKit/527 (KHTML, like Gecko) Chrome/69.0.0.0 Mobile Safari/5"
+                    "ip":"",
+                    "ua":""
             },
             "ad_slots":[
                     {
                         "slot_id":100000400,
-                        "dimensions":"300x250"
+                        "dimensions":"300x200"
                     },
                     {
                         "slot_id":100000401,
-                        "dimensions":"300x50"
+                        "dimensions":""
                     }
             ]
             }'
