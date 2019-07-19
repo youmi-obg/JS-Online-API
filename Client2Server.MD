@@ -104,7 +104,7 @@
 #### Request
 ```
 curl -X POST \
-  https://jt.nemoka.com/v1/ol/ads \
+  https://jt.nemoka.com/v1/olc/ads \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -d '{
