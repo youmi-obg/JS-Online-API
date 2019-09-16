@@ -25,8 +25,6 @@
 |--------------|----------|-------|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | ip           | String   | Y     | 184.34.21.5                                             | 客户端IP                                                                                     |
 | ua           | String   | Y     | Mozilla/5.0 (Linux;) (KHTML) Chrome/69 Mobile Safari/5  | 客户端user agent字符串                                                                                      |
-| gaid         | String   | Y     |                                                         | Google Advertising ID                                                                                    |
-| idfa         | String   | Y     |                                                         | iOS IDFA                                                                                    |
 
 
 #### <a name="AdSlot">AdSlot</a>
