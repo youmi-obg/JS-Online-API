@@ -57,7 +57,9 @@
 | oid           | Integer                                   | Y         | 84610400       | 广告唯一id                                                                                     |
 | app_info      | <a href="#AppInfo">AppInfo</a>            | N         |                | APP信息（可能仅含素材信息）                                                                                      |
 | tracking_urls | <a href="#TrackingUrls">TrackingUrls</a>  | Y         |                | 包含展示及跳转链接                                                                                      |
-| creatives     | <a href="#Creatives">Creatives</a>        | N         |                | 素材信息（可能仅含APP信息）                                                                                      |
+| creatives     | <a href="#Creatives">Creatives</a>        | N         |                | 素材信息（可能仅含APP信息）|
+| stream_type          | String   | N         |                 | mainstream/adult |
+| cov_description          | String   | N         |                 | 转化描述 |
 
 
 #### <a name="AppInfo">AppInfo</a>
@@ -67,8 +69,7 @@
 | app_native_id     | String   | N         |                 | package/bundle ID                                                                                |
 | app_description   | String   | N         |                 | APP的描述                                                                                 |
 | app_icon          | String   | N         |                 | APP的icon链接                                                                                 |
-| stream_type          | String   | N         |                 | Mainstream/Adult, unkown类型为all  |
-| cov_description          | String   | N         |                 | 转化描述 |
+
 
 
 #### <a name="TrackingUrls">TrackingUrls</a>
@@ -138,13 +139,13 @@ curl -X POST \
             "ads": [
                 {
                     "oid": 100,
+                    "stream_type": "mainstream",
+                    "cov_description": "",
                     "app_info": {
                         "app_name":"xxx",
                         "app_category":"",
                         "app_description":"",
-                        "app_icon":"http://google.cdn.com/1.png",
-                        "stream_type": "mainstream",
-                        "cov_description": ""
+                        "app_icon":"http://google.cdn.com/1.png"
                     },
                     "tracking_urls": {
                         "impression_url": "https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT2RMRUwtY094aUFfZUdTSkNDc0FpajZBV2dEGIHYFiAC",
