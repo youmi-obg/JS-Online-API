@@ -24,9 +24,9 @@
 #### <a name="ClientInfo">ClientInfo</a>
 | 参数    | 类型     | 必须 | 样例                                                 |描述               |
 |--------------|----------|-------|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| ip           | String   | Y     | ""                                       | 该字段必传，可为空 |
-| ua           | String   | Y     | ""  | 该字段必传，可为空|
-| carrier           | String   | N     | ""  | 否,但大小写要一致 |
+| ip           | String   | Y     | ""                                       | 该字段必传 |
+| ua           | String   | Y     | ""  | 该字段必传|
+| carrier           | String   | N     | ""  | 但大小写要一致 |
 
 #### <a name="AdSlot">AdSlot</a>
 | 参数    | 类型     | 必须 | 样例           |描述               |
@@ -142,7 +142,9 @@ curl -X POST \
                         "app_name":"xxx",
                         "app_category":"",
                         "app_description":"",
-                        "app_icon":"http://google.cdn.com/1.png"
+                        "app_icon":"http://google.cdn.com/1.png",
+                        "stream_type": "mainstream",
+                        "cov_description": ""
                     },
                     "tracking_urls": {
                         "impression_url": "https://jt.nemoka.com/v1/adj/log?f=ol&r=ChxDT2RMRUwtY094aUFfZUdTSkNDc0FpajZBV2dEGIHYFiAC",
