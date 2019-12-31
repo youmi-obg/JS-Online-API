@@ -27,6 +27,8 @@
 | ip           | String   | Y     | ""                                       | 该字段必传 |
 | ua           | String   | Y     | ""  | 该字段必传|
 | carrier           | String   | N     | ""  | 但大小写要一致 |
+| gaid         | String   | N     |                                                         | Google Advertising ID                                                                                    |
+| idfa         | String   | N     |                                                         | iOS IDFA                                                                                    |
 
 #### <a name="AdSlot">AdSlot</a>
 | 参数    | 类型     | 必须 | 样例           |描述               |
