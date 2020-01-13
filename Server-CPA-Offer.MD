@@ -19,7 +19,7 @@
 | app_id       | String                                 | Y         | app_id=3201162                              | 用户Aid      |
 | client_info  | <a href="#ClientInfo">ClientInfo</a>   | Y         |                 | 客户端基本信息   |
 | ad_slots     | []<a href="#AdSlot">AdSlot</a>         | Y         |             | 广告位基本信息，一次请求最多10个广告位 |
-
+source     | String         | N         |             | 子渠道 |
 
 #### <a name="ClientInfo">ClientInfo</a>
 | 参数    | 类型     | 必须 | 样例                                                 |描述               |
@@ -113,10 +113,12 @@ curl -X POST \
   -d '{
             "access_token":"{Your Access Token}",
             "app_id":10000,
+            "source": "123",
             "client_info":{
                     "ip":"",
                     "ua":"",
-                    "carrier": ""
+                    "idfa": "",
+                    "gaid": ""
             },
             "ad_slots":[
                     {
